@@ -1,0 +1,16 @@
+DELAY 2000
+REM Open Run dialog
+DELAY 500
+GUI r
+DELAY 500
+REM Type "cmd" and press Enter
+STRING cmd
+ENTER
+DELAY 2000
+REM Type the correct Nmap command and press Enter
+STRING nmap -A -T4 -oN C:\nmap_scan.txt 192.168.0.1
+ENTER
+DELAY 5000
+REM Type "exit" and press Enter
+STRING exit
+ENTER
